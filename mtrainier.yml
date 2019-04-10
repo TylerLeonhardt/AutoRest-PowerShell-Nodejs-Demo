@@ -1,0 +1,28 @@
+openapi: 3.0.2
+info:
+  title: MtRainier
+  description: Gets whether the mountain is out!
+  version: 1.0.0
+servers:
+- url: https://themtn.azurewebsites.net/
+paths:
+  /api:
+    get:
+      summary: Gets whether the mountain is out! 
+      operationId: MtRainier_get
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MtRainier"
+components:
+  schemas:
+    MtRainier:
+      type: object
+      properties:
+        result:
+          type: boolean
+        image:
+          type: string

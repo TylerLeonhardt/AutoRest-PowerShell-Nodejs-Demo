@@ -1,0 +1,48 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "MtRainier",
+    "description": "Gets whether the mountain is out!",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://themtn.azurewebsites.net/"
+    }
+  ],
+  "paths": {
+    "/api": {
+      "get": {
+        "summary": "Gets whether the mountain is out!",
+        "operationId": "MtRainer_get",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MtRainer"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "MtRainer": {
+        "type": "object",
+        "properties": {
+          "result": {
+            "type": "boolean"
+          },
+          "image": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

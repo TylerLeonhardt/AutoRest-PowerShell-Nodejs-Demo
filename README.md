@@ -27,6 +27,8 @@ A simple web app and API that says whether Mt. Rainier is visible.
 
 ### FDIC
 
+I got this from the [official FDIC API docs page](https://banks.data.fdic.gov/docs/)! The only modification was combining it into 1 single yml.
+
 * OpenAPI Spec: fdic.yml
 * Language: Node.js
 * Generated Code Folder: FDIC

@@ -1,6 +1,6 @@
-# Simplify testing of REST APIs using PowerShell and AutoRest
+# Simplify testing of REST APIs and auto-generating code using AutoRest
 
-[A talk](https://www.meetup.com/Seattle-Web-App-Developers-Group/events/259603088/) I gave at the Seattle Web App Developers Group meetup on April 10th, 2019.
+Auto-generate code!
 
 ## Prereqs
 

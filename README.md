@@ -28,7 +28,7 @@ A simple web app and API that says whether Mt. Rainier is visible.
 
 ### FDIC
 
-I got this from the [official FDIC API docs page](https://banks.data.fdic.gov/docs/)! The only modification was changing the `server.url` since I downloaded the files.
+I got this from the [official FDIC API docs page](https://banks.data.fdic.gov/docs/)! The only modification was changing the `server.url` since I downloaded the files and merging the files into 1 file.
 
 #### PowerShell
 

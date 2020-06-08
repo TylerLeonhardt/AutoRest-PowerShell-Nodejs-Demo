@@ -435,4 +435,8 @@ typings/
 # Exclude .NET assemblies from source
 *.dll
 
+# Generated code
 fdic-test.js
+PSFdic
+fdic.js
+PSMtRainier

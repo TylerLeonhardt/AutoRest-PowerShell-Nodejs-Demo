@@ -7,11 +7,11 @@
 'use strict';
 
 /**
- * Class representing a Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema.
+ * Class representing a Pathsl90g6vlocationsgetresponses200contentapplicationJsonschema.
  */
-class Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema {
+class Pathsl90g6vlocationsgetresponses200contentapplicationJsonschema {
   /**
-   * Create a Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema.
+   * Create a Pathsl90g6vlocationsgetresponses200contentapplicationJsonschema.
    * @property {object} [meta]
    * @property {number} [meta.total] Total query result count
    * @property {object} [meta.parameters] Query parameters supplied
@@ -24,18 +24,18 @@ class Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema {
   }
 
   /**
-   * Defines the metadata of Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema
+   * Defines the metadata of Pathsl90g6vlocationsgetresponses200contentapplicationJsonschema
    *
-   * @returns {object} metadata of Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema
+   * @returns {object} metadata of Pathsl90g6vlocationsgetresponses200contentapplicationJsonschema
    *
    */
   mapper() {
     return {
       required: false,
-      serializedName: 'paths·en61rz·institutions·get·responses·200·content·application-json·schema',
+      serializedName: 'paths·l90g6v·locations·get·responses·200·content·application-json·schema',
       type: {
         name: 'Composite',
-        className: 'Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema',
+        className: 'Pathsl90g6vlocationsgetresponses200contentapplicationJsonschema',
         modelProperties: {
           meta: {
             required: false,
@@ -52,10 +52,9 @@ class Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema {
               name: 'Sequence',
               element: {
                   required: false,
-                  serializedName: 'InstitutionElementType',
+                  serializedName: 'ObjectElementType',
                   type: {
-                    name: 'Composite',
-                    className: 'Institution'
+                    name: 'Object'
                   }
               }
             }
@@ -66,4 +65,4 @@ class Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema {
   }
 }
 
-module.exports = Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema;
+module.exports = Pathsl90g6vlocationsgetresponses200contentapplicationJsonschema;

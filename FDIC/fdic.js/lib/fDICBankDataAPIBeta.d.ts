@@ -77,6 +77,17 @@ export default class FDICBankDataAPIBeta extends ServiceClient {
    * `DEP:[50000 TO *]`
    *
    *
+   * @param {string} [options.search] Flexible text search against institution
+   * records - currently only supporting name search.
+   * Search supports text search and fuzzy matching, as opposed to filters that
+   * are exact matches.
+   * Examples:
+   * * Search by name
+   * `NAME: Island`
+   * * Search by name (fuzzy match)
+   * `NAME: Iland`
+   *
+   *
    * @param {string} [options.fields] Comma delimited list of fields to search.
    *
    * @param {string} [options.sortBy] Field name by which to sort returned data
@@ -98,7 +109,7 @@ export default class FDICBankDataAPIBeta extends ServiceClient {
    *
    * @reject {Error|ServiceError} - The error object.
    */
-  searchInstitutionsWithHttpOperationResponse(options?: { filters? : string, fields? : string, sortBy? : string, sortOrder? : string, limit? : number, offset? : number, customHeaders? : { [headerName: string]: string; } }): Promise<HttpOperationResponse<models.Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema>>;
+  searchInstitutionsWithHttpOperationResponse(options?: { filters? : string, search? : string, fields? : string, sortBy? : string, sortOrder? : string, limit? : number, offset? : number, customHeaders? : { [headerName: string]: string; } }): Promise<HttpOperationResponse<models.Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema>>;
 
   /**
    * @summary Get Financial Institutions
@@ -117,6 +128,17 @@ export default class FDICBankDataAPIBeta extends ServiceClient {
    * `DATEUPDT:["2010-01-01" TO "2010-12-31"]`
    * * Filter for deposits over 50,000,000 (50000 thousands of dollars)
    * `DEP:[50000 TO *]`
+   *
+   *
+   * @param {string} [options.search] Flexible text search against institution
+   * records - currently only supporting name search.
+   * Search supports text search and fuzzy matching, as opposed to filters that
+   * are exact matches.
+   * Examples:
+   * * Search by name
+   * `NAME: Island`
+   * * Search by name (fuzzy match)
+   * `NAME: Iland`
    *
    *
    * @param {string} [options.fields] Comma delimited list of fields to search.
@@ -158,9 +180,9 @@ export default class FDICBankDataAPIBeta extends ServiceClient {
    *
    *                      {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
    */
-  searchInstitutions(options?: { filters? : string, fields? : string, sortBy? : string, sortOrder? : string, limit? : number, offset? : number, customHeaders? : { [headerName: string]: string; } }): Promise<models.Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema>;
+  searchInstitutions(options?: { filters? : string, search? : string, fields? : string, sortBy? : string, sortOrder? : string, limit? : number, offset? : number, customHeaders? : { [headerName: string]: string; } }): Promise<models.Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema>;
   searchInstitutions(callback: ServiceCallback<models.Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema>): void;
-  searchInstitutions(options: { filters? : string, fields? : string, sortBy? : string, sortOrder? : string, limit? : number, offset? : number, customHeaders? : { [headerName: string]: string; } }, callback: ServiceCallback<models.Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema>): void;
+  searchInstitutions(options: { filters? : string, search? : string, fields? : string, sortBy? : string, sortOrder? : string, limit? : number, offset? : number, customHeaders? : { [headerName: string]: string; } }, callback: ServiceCallback<models.Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema>): void;
 
 
   /**

@@ -7,11 +7,11 @@
 'use strict';
 
 /**
- * Class representing a Paths1lzmfz0failuresgetresponses200contentapplicationJsonschema.
+ * Class representing a Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema.
  */
-class Paths1lzmfz0failuresgetresponses200contentapplicationJsonschema {
+class Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema {
   /**
-   * Create a Paths1lzmfz0failuresgetresponses200contentapplicationJsonschema.
+   * Create a Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema.
    * @property {object} [meta]
    * @property {number} [meta.total] Total query result count
    * @property {object} [meta.parameters] Query parameters supplied
@@ -19,25 +19,23 @@ class Paths1lzmfz0failuresgetresponses200contentapplicationJsonschema {
    * @property {string} [meta.index.name] name of index used to retrieve data
    * @property {date} [meta.index.createTimestamp] date/time index was created
    * @property {array} [data]
-   * @property {object} [totals]
-   * @property {number} [totals.count] Total result count
    */
   constructor() {
   }
 
   /**
-   * Defines the metadata of Paths1lzmfz0failuresgetresponses200contentapplicationJsonschema
+   * Defines the metadata of Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema
    *
-   * @returns {object} metadata of Paths1lzmfz0failuresgetresponses200contentapplicationJsonschema
+   * @returns {object} metadata of Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema
    *
    */
   mapper() {
     return {
       required: false,
-      serializedName: 'paths·1lzmfz0·failures·get·responses·200·content·application-json·schema',
+      serializedName: 'paths·en61rz·institutions·get·responses·200·content·application-json·schema',
       type: {
         name: 'Composite',
-        className: 'Paths1lzmfz0failuresgetresponses200contentapplicationJsonschema',
+        className: 'Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema',
         modelProperties: {
           meta: {
             required: false,
@@ -54,20 +52,11 @@ class Paths1lzmfz0failuresgetresponses200contentapplicationJsonschema {
               name: 'Sequence',
               element: {
                   required: false,
-                  serializedName: 'FailureElementType',
+                  serializedName: 'ObjectElementType',
                   type: {
-                    name: 'Composite',
-                    className: 'Failure'
+                    name: 'Object'
                   }
               }
-            }
-          },
-          totals: {
-            required: false,
-            serializedName: 'totals',
-            type: {
-              name: 'Composite',
-              className: 'Totals'
             }
           }
         }
@@ -76,4 +65,4 @@ class Paths1lzmfz0failuresgetresponses200contentapplicationJsonschema {
   }
 }
 
-module.exports = Paths1lzmfz0failuresgetresponses200contentapplicationJsonschema;
+module.exports = Pathsen61rzinstitutionsgetresponses200contentapplicationJsonschema;

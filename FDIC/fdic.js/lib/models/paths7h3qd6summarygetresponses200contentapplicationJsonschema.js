@@ -52,10 +52,9 @@ class Paths7h3qd6summarygetresponses200contentapplicationJsonschema {
               name: 'Sequence',
               element: {
                   required: false,
-                  serializedName: 'SummaryElementType',
+                  serializedName: 'ObjectElementType',
                   type: {
-                    name: 'Composite',
-                    className: 'Summary'
+                    name: 'Object'
                   }
               }
             }

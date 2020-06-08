@@ -1,5 +1,5 @@
 @{
-  GUID = 'c98e34de-7c5b-4e41-acc7-7a99377bffd4'
+  GUID = 'fb335bb7-0a42-4629-b2e0-64c7b4911cd3'
   RootModule = './MtRainier.psm1'
   ModuleVersion = '0.1.0'
   CompatiblePSEditions = 'Core', 'Desktop'

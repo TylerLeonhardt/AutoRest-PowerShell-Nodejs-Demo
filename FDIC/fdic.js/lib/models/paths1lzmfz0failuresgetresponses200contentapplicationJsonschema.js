@@ -7,11 +7,11 @@
 'use strict';
 
 /**
- * Class representing a Pathsl90g6vlocationsgetresponses200contentapplicationJsonschema.
+ * Class representing a Paths1lzmfz0failuresgetresponses200contentapplicationJsonschema.
  */
-class Pathsl90g6vlocationsgetresponses200contentapplicationJsonschema {
+class Paths1lzmfz0failuresgetresponses200contentapplicationJsonschema {
   /**
-   * Create a Pathsl90g6vlocationsgetresponses200contentapplicationJsonschema.
+   * Create a Paths1lzmfz0failuresgetresponses200contentapplicationJsonschema.
    * @property {object} [meta]
    * @property {number} [meta.total] Total query result count
    * @property {object} [meta.parameters] Query parameters supplied
@@ -19,23 +19,25 @@ class Pathsl90g6vlocationsgetresponses200contentapplicationJsonschema {
    * @property {string} [meta.index.name] name of index used to retrieve data
    * @property {date} [meta.index.createTimestamp] date/time index was created
    * @property {array} [data]
+   * @property {object} [totals]
+   * @property {number} [totals.count] Total result count
    */
   constructor() {
   }
 
   /**
-   * Defines the metadata of Pathsl90g6vlocationsgetresponses200contentapplicationJsonschema
+   * Defines the metadata of Paths1lzmfz0failuresgetresponses200contentapplicationJsonschema
    *
-   * @returns {object} metadata of Pathsl90g6vlocationsgetresponses200contentapplicationJsonschema
+   * @returns {object} metadata of Paths1lzmfz0failuresgetresponses200contentapplicationJsonschema
    *
    */
   mapper() {
     return {
       required: false,
-      serializedName: 'paths·l90g6v·locations·get·responses·200·content·application-json·schema',
+      serializedName: 'paths·1lzmfz0·failures·get·responses·200·content·application-json·schema',
       type: {
         name: 'Composite',
-        className: 'Pathsl90g6vlocationsgetresponses200contentapplicationJsonschema',
+        className: 'Paths1lzmfz0failuresgetresponses200contentapplicationJsonschema',
         modelProperties: {
           meta: {
             required: false,
@@ -52,12 +54,19 @@ class Pathsl90g6vlocationsgetresponses200contentapplicationJsonschema {
               name: 'Sequence',
               element: {
                   required: false,
-                  serializedName: 'LocationElementType',
+                  serializedName: 'ObjectElementType',
                   type: {
-                    name: 'Composite',
-                    className: 'Location'
+                    name: 'Object'
                   }
               }
+            }
+          },
+          totals: {
+            required: false,
+            serializedName: 'totals',
+            type: {
+              name: 'Composite',
+              className: 'Totals'
             }
           }
         }
@@ -66,4 +75,4 @@ class Pathsl90g6vlocationsgetresponses200contentapplicationJsonschema {
   }
 }
 
-module.exports = Pathsl90g6vlocationsgetresponses200contentapplicationJsonschema;
+module.exports = Paths1lzmfz0failuresgetresponses200contentapplicationJsonschema;

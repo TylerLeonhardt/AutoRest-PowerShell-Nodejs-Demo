@@ -36,6 +36,17 @@ const models = require('./models');
  * `DEP:[50000 TO *]`
  *
  *
+ * @param {string} [options.search] Flexible text search against institution
+ * records - currently only supporting name search.
+ * Search supports text search and fuzzy matching, as opposed to filters that
+ * are exact matches.
+ * Examples:
+ * * Search by name
+ * `NAME: Island`
+ * * Search by name (fuzzy match)
+ * `NAME: Iland`
+ *
+ *
  * @param {string} [options.fields] Comma delimited list of fields to search.
  *
  * @param {string} [options.sortBy] Field name by which to sort returned data
@@ -77,6 +88,7 @@ function _searchInstitutions(options, callback) {
     throw new Error('callback cannot be null.');
   }
   let filters = (options && options.filters !== undefined) ? options.filters : undefined;
+  let search = (options && options.search !== undefined) ? options.search : undefined;
   let fields = (options && options.fields !== undefined) ? options.fields : undefined;
   let sortBy = (options && options.sortBy !== undefined) ? options.sortBy : 'NAME';
   let sortOrder = (options && options.sortOrder !== undefined) ? options.sortOrder : 'ASC';
@@ -86,6 +98,9 @@ function _searchInstitutions(options, callback) {
   try {
     if (filters !== null && filters !== undefined && typeof filters.valueOf() !== 'string') {
       throw new Error('filters must be of type string.');
+    }
+    if (search !== null && search !== undefined && typeof search.valueOf() !== 'string') {
+      throw new Error('search must be of type string.');
     }
     if (fields !== null && fields !== undefined && typeof fields.valueOf() !== 'string') {
       throw new Error('fields must be of type string.');
@@ -137,6 +152,9 @@ function _searchInstitutions(options, callback) {
   let queryParameters = [];
   if (filters !== null && filters !== undefined) {
     queryParameters.push('filters=' + encodeURIComponent(filters));
+  }
+  if (search !== null && search !== undefined) {
+    queryParameters.push('search=' + encodeURIComponent(search));
   }
   if (fields !== null && fields !== undefined) {
     queryParameters.push('fields=' + encodeURIComponent(fields));
@@ -1062,6 +1080,17 @@ class FDICBankDataAPIBeta extends ServiceClient {
    * `DEP:[50000 TO *]`
    *
    *
+   * @param {string} [options.search] Flexible text search against institution
+   * records - currently only supporting name search.
+   * Search supports text search and fuzzy matching, as opposed to filters that
+   * are exact matches.
+   * Examples:
+   * * Search by name
+   * `NAME: Island`
+   * * Search by name (fuzzy match)
+   * `NAME: Iland`
+   *
+   *
    * @param {string} [options.fields] Comma delimited list of fields to search.
    *
    * @param {string} [options.sortBy] Field name by which to sort returned data
@@ -1114,6 +1143,17 @@ class FDICBankDataAPIBeta extends ServiceClient {
    * `DATEUPDT:["2010-01-01" TO "2010-12-31"]`
    * * Filter for deposits over 50,000,000 (50000 thousands of dollars)
    * `DEP:[50000 TO *]`
+   *
+   *
+   * @param {string} [options.search] Flexible text search against institution
+   * records - currently only supporting name search.
+   * Search supports text search and fuzzy matching, as opposed to filters that
+   * are exact matches.
+   * Examples:
+   * * Search by name
+   * `NAME: Island`
+   * * Search by name (fuzzy match)
+   * `NAME: Iland`
    *
    *
    * @param {string} [options.fields] Comma delimited list of fields to search.

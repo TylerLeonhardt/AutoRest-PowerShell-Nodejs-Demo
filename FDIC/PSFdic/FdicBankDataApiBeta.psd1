@@ -1,5 +1,5 @@
 @{
-  GUID = '15f56e48-473a-4e3e-ac33-348d01a19ba6'
+  GUID = '96440914-d422-4476-897e-ba0ce5eaeacb'
   RootModule = './FdicBankDataApiBeta.psm1'
   ModuleVersion = '0.1.0'
   CompatiblePSEditions = 'Core', 'Desktop'

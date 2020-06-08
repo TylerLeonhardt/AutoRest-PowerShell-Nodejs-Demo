@@ -1,6 +1,6 @@
 ---
 Module Name: FdicBankDataApiBeta
-Module Guid: 15f56e48-473a-4e3e-ac33-348d01a19ba6
+Module Guid: 96440914-d422-4476-897e-ba0ce5eaeacb
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/fdicbankdataapibeta
 Help Version: 1.0.0.0
 Locale: en-US

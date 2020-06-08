@@ -50,9 +50,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Sample.API.Models.IMtRainier
 
-## ALIASES
-
 ## NOTES
+
+ALIASES
 
 ## RELATED LINKS
 

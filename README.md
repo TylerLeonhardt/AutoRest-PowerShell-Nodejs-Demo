@@ -20,25 +20,43 @@ A simple web app and API that says whether Mt. Rainier is visible.
 
 #### Build steps for MtRainier
 
-1. `autorest --input-file=./mtrainier.yml --output-folder=./MtRainier --powershell`
 1. `cd MtRainier`
+1. `autorest --input-file=./mtrainier.yml --output-folder=./PSMtRainier --powershell`
+1. `cd PSMtRainier`
 1. `./build-module.ps1 -Run` - build and start a new instance of PowerShell with the module loaded.
 1. `Get-MtRainier` - Run the command.
 
 ### FDIC
 
-I got this from the [official FDIC API docs page](https://banks.data.fdic.gov/docs/)! The only modification was combining it into 1 single yml.
+I got this from the [official FDIC API docs page](https://banks.data.fdic.gov/docs/)! The only modification was changing the `server.url` since I downloaded the files.
+
+#### PowerShell
+
+* OpenAPI Spec: fdic.yaml
+* Language: PowerShell
+* Generated Code Folder: PSFdic
+
+##### Build steps for PSFdic
+
+1. `cd FDIC`
+1. `autorest --input-file=./fdic.yaml --output-folder=./PSFdic --powershell --v3`
+1. `cd PSFdic` - to install dependencies.
+1. `./build-module.ps1 -Run` - build and start a new instance of PowerShell with the module.
+1. `Search-StructureInstitution -Filters 'STALP:WA'` - Run a command.
+
+#### Node.js
 
 * OpenAPI Spec: fdic.yml
 * Language: Node.js
-* Generated Code Folder: FDIC
+* Generated Code Folder: fdic.js
 
-#### Build steps for FDIC
+##### Build steps for fdic.js
 
-1. `autorest --input-file=./fdic.yml --output-folder=./fdic.js --nodejs`
+1. `cd FDIC`
+1. `autorest --input-file=./fdic.yaml --output-folder=./fdic.js --nodejs --v3`
 1. `npm install` - to install dependencies.
 1. `npm run compile` - to compile the TypeScript. (NOTE: you may get errors, that's ok)
-2. `npm start` - run the code.
+1. `npm start` - run the code.
 
 ## Links and Links
 

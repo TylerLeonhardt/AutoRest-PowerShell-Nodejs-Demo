@@ -14,8 +14,8 @@ Returns a list of financial institutions.
 
 ```
 Search-StructureInstitution [-Download <String>] [-Fields <String>] [-Filename <String>] [-Filters <String>]
- [-Format <String>] [-Limit <Int32>] [-Offset <Int32>] [-SortBy <String>] [-SortOrder <String>] [-PassThru]
- [<CommonParameters>]
+ [-Format <String>] [-Limit <Int32>] [-Offset <Int32>] [-Search <String>] [-SortBy <String>]
+ [-SortOrder <String>] [-PassThru] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -163,6 +163,28 @@ Returns true when the command succeeds
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Search
+Flexible text search against institution records - currently only supporting name search.
+
+Search supports text search and fuzzy matching, as opposed to filters that are exact matches.
+Examples:
+* Search by name
+`NAME: Island`
+* Search by name (fuzzy match)
+`NAME: Iland`
+
+```yaml
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 

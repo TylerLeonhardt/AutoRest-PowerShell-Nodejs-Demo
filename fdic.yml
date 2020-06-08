@@ -1,7 +1,7 @@
 openapi: 3.0.0
 servers:
   - description: API to serve banking industry data to the public.
-    url: 'https://banks.data.fdic.gov/api'
+    url: 'https://banks.data.fdic.gov/api/'
 info:
   description: API to serve banking industry data to the public.
   version: 0.1.0

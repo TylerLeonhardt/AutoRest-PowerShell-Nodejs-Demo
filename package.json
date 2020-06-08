@@ -1,0 +1,30 @@
+{
+  "name": "fdic",
+  "author": "Microsoft Corporation",
+  "description": "FDICBankDataAPIBeta Library with typescript type definitions for node",
+  "version": "1.0.0",
+  "dependencies": {
+    "ms-rest": "^2.3.3"
+  },
+  "devDependencies": {
+    "typescript": "3.4.3"
+  },
+  "keywords": [
+    "node",
+    "azure"
+  ],
+  "scripts": {
+    "compile": "tsc ./fdic-test.ts",
+    "start": "node ./fdic-test.js"
+  },
+  "license": "MIT",
+  "main": "./lib/fDICBankDataAPIBeta.js",
+  "homepage": "https://github.com/azure/azure-sdk-for-node",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azure/azure-sdk-for-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/azure/azure-sdk-for-node/issues"
+  }
+}

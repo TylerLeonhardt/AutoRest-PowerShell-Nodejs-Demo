@@ -434,3 +434,5 @@ typings/
 
 # Exclude .NET assemblies from source
 *.dll
+
+fdic-test.js

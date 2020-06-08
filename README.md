@@ -6,7 +6,7 @@
 
 1. Get [Node.js](https://nodejs.org/en/).
 1. Get [PowerShell](https://github.com/powershell/powershell#get-powershell).
-1. `npm install -g autorest@beta`
+1. Get [AutoRest](https://github.com/Azure/autorest/blob/master/docs/installing-autorest.md).
 
 ## AutoRest demos
 
@@ -35,11 +35,10 @@ I got this from the [official FDIC API docs page](https://banks.data.fdic.gov/do
 
 #### Build steps for FDIC
 
-1. `autorest --input-file=./fdic.yml --output-folder=./FDIC --nodejs`
-1. `cd FDIC`
+1. `autorest --input-file=./fdic.yml --output-folder=./fdic.js --nodejs`
 1. `npm install` - to install dependencies.
-1. `tsc fdic-test.ts` - optional, to compile the TypeScript.
-1. `node fdic-test.js` - run the code.
+1. `npm run compile` - to compile the TypeScript. (NOTE: you may get errors, that's ok)
+2. `npm start` - run the code.
 
 ## Links and Links
 
